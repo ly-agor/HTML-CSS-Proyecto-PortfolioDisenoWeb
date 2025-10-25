@@ -1,0 +1,1039 @@
+@media (min-width: 1150px){
+    
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 44pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 32pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        margin-top: 60px;
+    }
+
+    /* Sección "Sobre mí" */
+
+    .seccion1{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        margin: 5%;
+        padding: 3%;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 12pt; 
+    }
+
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        padding: 3%;
+        align-items: center;
+    }
+    
+    .seccion2_carrusel{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        animation: scroll 20s linear infinite;
+    }
+
+    .contenedor_carrusel{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+    }
+
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }
+    
+        100%{
+            transform:translateX(-100%);
+        }
+    }
+
+    /* Sección "Mis proyectos" */
+
+    .boton_tarjeta{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        font-size: 12pt;
+    }
+
+    .boton_tarjeta:hover{
+        background-color: #31005C;
+        color: #D0FF50;
+        cursor: pointer;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../Imágenes/Fondo.jpg');
+        background-size: cover;
+        padding: 5%;
+    }
+
+    .proyectos_grid{
+        display: grid;
+        grid-template-columns: repeat(6, 15%);
+        justify-items: center;
+        gap: 2%;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .branding{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/branding-blur.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .branding:hover{
+        background-image: url('../Imágenes/branding.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .rrss{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/rrss-blur.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .rrss:hover{
+        background-image: url('../Imágenes/rrss.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .imprenta{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/imprenta-blur.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .imprenta:hover{
+        background-image: url('../Imágenes/imprenta.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .web{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/web-bluir.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .web:hover{
+        background-image: url('../Imágenes/web.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .ilustraciones{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/ilustraciones.hover.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .ilustraciones:hover{
+        background-image: url('../Imágenes/ilustraciones.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .video{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/video-blur.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .video:hover{
+        background-image: url('../Imágenes/video.jpg');
+        background-size: 110%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1149px){
+    
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 8pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        margin-top: 120px;
+    }
+
+    /* Sección "Sobre mí" */
+
+    .seccion1{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        margin: 5%;
+        padding: 3%;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 10pt; 
+    }
+
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        padding: 3%;
+        align-items: center;
+    }
+    
+    .seccion2_carrusel{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        animation: scroll 20s linear infinite;
+        width: 150%;
+        z-index: 0;
+    }
+
+    .contenedor_carrusel{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+    }
+
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }
+    
+        100%{
+            transform:translateX(-100%);
+        }
+    }
+
+    /* Sección "Mis proyectos" */
+
+    .boton_tarjeta{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        font-size: 9pt;
+    }
+
+    .boton_tarjeta:hover{
+        background-color: #31005C;
+        color: #D0FF50;
+        cursor: pointer;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../Imágenes/Fondo.jpg');
+        background-size: cover;
+        padding: 5%;
+    }
+
+    .proyectos_grid{
+        display: grid;
+        grid-template-columns: repeat(6, 15%);
+        justify-items: center;
+        gap: 2%;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .branding{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/branding-blur.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .branding:hover{
+        background-image: url('../Imágenes/branding.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .rrss{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/rrss-blur.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .rrss:hover{
+        background-image: url('../Imágenes/rrss.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .imprenta{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/imprenta-blur.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .imprenta:hover{
+        background-image: url('../Imágenes/imprenta.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .web{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/web-bluir.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .web:hover{
+        background-image: url('../Imágenes/web.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .ilustraciones{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/ilustraciones.hover.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .ilustraciones:hover{
+        background-image: url('../Imágenes/ilustraciones.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    .video{
+        padding-top: 75%;
+        padding-bottom: 75%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../Imágenes/video-blur.jpg');
+        background-size: 110%;
+        background-position: center;
+    }
+
+    .video:hover{
+        background-image: url('../Imágenes/video.jpg');
+        background-size: 120%;
+        background-position: center;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+}
+
+@media (max-width:699px){
+     
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+    .novisible-movil{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 8vh;
+        width: auto;
+    }
+
+    .menu-movil{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo de botones y animación */
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: #31005C;
+        text-decoration: none;
+        margin-right: 30px;
+        text-align: end;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 12pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        margin-top: 100px;
+    }
+
+    /* Sección "Sobre mí" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .seccion1-interna{
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-bottom: 20%;
+    }
+
+    .seccion1_img{
+        margin-top: -70px;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 12pt; 
+    }
+
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%;
+        align-items: center;
+    }
+    
+    .seccion2_carrusel{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+        animation: scroll 20s linear infinite;
+        width: 180%;
+    }
+
+    .contenedor_carrusel{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        overflow: hidden;
+    }
+
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }
+    
+        100%{
+            transform:translateX(-100%);
+        }
+    }
+
+    /* Sección "Mis proyectos" */
+
+    .boton_tarjeta{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-size: 16pt;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        padding: 11px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton_tarjeta:hover{
+        background-color: #31005C;
+        color: #D0FF50;
+        cursor: pointer;
+    }
+
+    .proyectos_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../Imágenes/Fondo.jpg');
+        background-size: cover;
+        padding: 10%;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 10%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }   
+}

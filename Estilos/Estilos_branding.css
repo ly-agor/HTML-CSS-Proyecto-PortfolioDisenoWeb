@@ -1,0 +1,1002 @@
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+@media (min-width: 1150px){
+    
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 100pt; 
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 44pt; 
+    }
+
+    .h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 32pt;
+    }
+
+    .h1_1{
+        color: #89009E;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        background-image: url(../Imágenes/fondo-verde.jpg);
+        padding: 10%;
+        background-size: cover;
+
+    }
+
+    /* Sección "Alma Animal" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        justify-items: left;
+        padding: 5%;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 12pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 4%;
+    }
+
+    .flex_almaanimal{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 5%;
+        
+    }
+
+    .flex_almaanimal2{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        justify-items: center;
+        margin-top: 3%;
+    }
+
+    li{
+        margin-left: 6%;
+    }
+
+    .img1{
+        margin-top: -200px;;
+    }
+
+    /* Sección "Z-Sound" */
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 12pt; 
+    }
+
+    .p2-fondo{
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 6%;
+        height: 70%;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        background-image: url(../Imágenes/Fondo.jpg);
+        padding: 5%;
+        background-size: cover;
+    }
+
+    .seccion2_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    /* Sección "DIGITECHCon - Congreso" */
+
+    .seccion3{
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5%;
+        overflow-x: hidden;
+    }
+
+    .contenedor_seccion3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .seccion3_izq{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10%;
+    }
+
+    .seccion3_dcha{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .p2-fondo-2{
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    .img_digi{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Sección "Sálvese quien beba" */
+
+    .seccion4{
+        padding: 5%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccion4_grid1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 30px;
+        margin-top: 5%;
+    }
+
+    .seccion4_grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 1149px){
+    
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 70pt; 
+        color: #89009E;
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 8pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        background-image: url(../Imágenes/fondo-verde.jpg);
+        background-size: cover;
+        padding: 15%;
+        background-size: cover;
+
+    }
+
+    /* Sección "Alma Animal" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        justify-items: left;
+        padding: 5%;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 10pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 4%;
+    }
+
+    .flex_almaanimal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 5%;
+        
+    }
+
+    .flex_almaanimal2{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        justify-items: center;
+        margin-top: 3%;
+    }
+
+    li{
+        margin-left: 6%;
+    }
+
+    .img1{
+        margin-top: -60px;;
+    }
+
+    /* Sección "Z-Sound" */
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 10pt; 
+    }
+
+    .p2-fondo{
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 10%;
+        height: 70%;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        background-image: url(../Imágenes/Fondo.jpg);
+        padding: 5%;
+        background-size: cover;
+    }
+
+    .seccion2_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    /* Sección "DIGITECHCon - Congreso" */
+
+    .seccion3{
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5%;
+        overflow-x: hidden;
+    }
+
+    .contenedor_seccion3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .seccion3_izq{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10%;
+    }
+
+    .seccion3_dcha{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .p2-fondo-2{
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    .img_digi{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Sección "Sálvese quien beba" */
+
+    .seccion4{
+        padding: 5%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccion4_grid1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 30px;
+        margin-top: 5%;
+    }
+
+    .seccion4_grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }  
+}
+
+@media (max-width:699px){
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 70pt; 
+        color: #89009E;
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-movil{
+        display: none;
+    }
+
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 8vh;
+        width: auto;
+    }
+
+    .menu-movil{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: #31005C;
+        text-decoration: none;
+        margin-right: 30px;
+        text-align: end;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 12pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        background-image: url(../Imágenes/fondo-verde-mov.jpg);
+        background-size: cover;
+        padding: 45%;
+        background-size: cover;
+
+    }
+
+    /* Sección "Alma Animal" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        justify-items: left;
+        padding: 10%;
+        gap: 30px;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 10pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 4%;
+    }
+
+    .flex_almaanimal{
+        display: flex;
+        margin-top: 5%;
+        
+    }
+
+    .flex_almaanimal2{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        justify-items: center;
+        margin-top: 3%;
+    }
+
+    .grid_movil{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    li{
+        margin-left: 6%;
+    }
+
+    .img1{
+        margin-top: -60px;;
+    }
+
+    /* Sección "Z-Sound" */
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 10pt; 
+    }
+
+    .p2-fondo{
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 10%;
+        height: 70%;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        background-image: url(../Imágenes/Fondo.jpg);
+        padding: 10%;
+        background-size: cover;
+        gap: 30px;
+    }
+
+    .seccion2_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    /* Sección "DIGITECHCon - Congreso" */
+
+    .seccion3{
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10%;
+    }
+
+    .contenedor_seccion3{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .seccion3_izq{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        z-index: 100;
+    }
+
+    .seccion3_dcha{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -280px;
+    }
+
+    .p2-fondo-2{
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    .img_digi{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Sección "Sálvese quien beba" */
+
+    .seccion4{
+        padding: 10%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .seccion4_grid1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .seccion4_grid2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 10%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    } 
+}

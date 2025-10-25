@@ -1,0 +1,511 @@
+@media (min-width: 1150px){
+    
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 44pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 32pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        padding: 5%;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1149px){
+    
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 8pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        padding: 3%;
+        align-items: center;
+    }    
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+}
+
+@media (max-width:699px){
+     
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+    .novisible-movil{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 8vh;
+        width: auto;
+    }
+
+    .menu-movil{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo de botones y animación */
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: #31005C;
+        text-decoration: none;
+        margin-right: 30px;
+        text-align: end;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 12pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección "Detrás del diseño" */
+
+    .seccion2_titulo{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%;
+        align-items: center;
+    }    
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 10%;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }   
+}

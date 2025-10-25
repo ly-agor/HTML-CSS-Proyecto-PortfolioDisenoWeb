@@ -1,0 +1,858 @@
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    img{
+        max-width: 100%;
+        display: block;
+    }
+
+@media (min-width: 1150px){
+    
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 100pt; 
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 44pt; 
+    }
+
+    .h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 32pt;
+    }
+
+    .h1_1{
+        color: #D0FF50;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    li{
+        margin-left: 30px;
+    }
+
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        background-image: url(../Imágenes/fondo-morado.jpg);
+        padding: 10%;
+        background-size: cover;
+
+    }
+
+    /* Sección "@digitechfp" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        align-items: center;
+    }
+
+    .seccion1_grid1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .seccion1_grid2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        margin-top: -100px;
+        align-items: center;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 12pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+        height: 60%;
+    }
+
+    /* Sección "@tcl_espana" */
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+    }
+
+    .seccion2_grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+        margin-top: -150px;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 12pt; 
+    }
+
+    .p2-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 6%;
+        height: 40%;
+    }
+
+    /* Sección "@cerveceroses" */
+    
+    .seccion3{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url(../Imágenes/Fondo.jpg);
+        background-size: cover;
+        align-items: center;
+    }
+
+    .seccion3_grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 1149px){
+ 
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 70pt; 
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    .h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h1_1{
+        color: #D0FF50;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    .novisible-dk{
+        display: none;
+    }
+
+    li{
+        margin-left: 30px;
+    }
+
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-img{
+        height: 6vh;
+        width: auto;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 8pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        margin-top: 100px;
+        background-image: url(../Imágenes/fondo-morado.jpg);
+        background-size: cover;
+        padding: 15%;
+        background-size: cover;
+
+    }
+
+    /* Sección "@digitechfp" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        align-items: center;
+    }
+
+    .seccion1_grid1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .seccion1_grid2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        align-items: center;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 10pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    /* Sección "@tcl_espana" */
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+    }
+
+    .seccion2_grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 10pt; 
+    }
+
+    .p2-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    /* Sección "@cerveceroses" */
+    
+    .seccion3{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-image: url(../Imágenes/Fondo.jpg);
+        background-size: cover;
+        align-items: center;
+    }
+
+    .seccion3_grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 5%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    }   
+}
+
+@media (max-width: 699px){
+    @font-face {
+        font-family: Montserrat;
+        src: url("Montserrat-VariableFont_wght.ttf");
+    }
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 70pt; 
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 30pt; 
+    }
+
+    .h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    .h1_1{
+        color: #D0FF50;
+    }
+
+    .h2_1{
+        color: #31005C;
+    }
+
+    .h2_2{
+        color: #ffffff;
+    }
+
+    .h3_1{
+        color: #31005C;
+    }
+
+    li{
+        margin-left: 30px;
+    }
+
+    .novisible-movil{
+        display: none;
+    }
+
+    /* Estilo del encabezado */
+
+    header{
+        background-color: #31005C;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo{
+        display: flex;
+        font-family: Montserrat;
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo-img{
+        height: 8vh;
+        width: auto;
+    }
+
+    .menu-movil{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo de botones y animación */
+
+
+    .botones_header{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .botones_header:hover{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #D0FF50;
+        text-decoration: none;
+    }
+
+    .boton{
+        background-color: #D0FF50;
+        border-radius: 50px;
+        font-size: 12pt;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #31005C;
+        text-align: center;
+        justify-content: end;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .boton:hover{
+        background-color: white;
+    }
+
+    .botones_header_elegido{
+        font-family: Montserrat;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .boton:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Sección slide principal */
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        background-image: url(../Imágenes/fondo-morado-mov.jpg);
+        background-size: cover;
+        padding: 35%;
+        background-size: cover;
+    }
+
+    /* Sección "@digitechfp" */
+
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../Imágenes/Fondo-blanco.jpg);
+        background-size: cover;
+        align-items: center;
+        gap: 30px;
+        padding-top: 10%;
+    }
+
+    .seccion1_grid1{
+        display: flex;
+        flex-direction: column;
+        width: 120%;
+        margin-top: -70px;
+        padding-bottom: 10%;
+    }
+
+    .seccion1_grid2{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        padding-bottom: 10%;
+    }
+
+    .p1{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #000000;
+        font-size: 10pt; 
+    }
+
+    .p1-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 6%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Sección "@tcl_espana" */
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .seccion2_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tcl_movil{
+        width: 160%;
+        margin-top: -70px;
+    }
+
+    .p2{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #31005C;
+        font-size: 10pt; 
+    }
+
+    .p2-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e0d5ec;
+        border-radius: 20px;
+        padding: 6%;
+    }
+
+    /* Sección "@cerveceroses" */
+    
+    .seccion3{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+        background-image: url(../Imágenes/Fondo.jpg);
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+        gap: 30px;
+    }
+
+    .seccion3_grid{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color: #31005C;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer_copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-footer{
+        width: 10%;
+    }
+
+    .p_footer{
+        font-family: Montserrat;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 8pt; 
+    } 
+}
+
